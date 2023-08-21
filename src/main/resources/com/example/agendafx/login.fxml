@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="603.0" style="-fx-background-color: #B1B3B5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="usuarioText" layoutX="116.0" layoutY="110.0" promptText="usuario" />
+      <TextField fx:id="claveText" accessibleRole="PASSWORD_FIELD" layoutX="116.0" layoutY="152.0" promptText="clave" />
+      <TextField fx:id="idText" layoutX="116.0" layoutY="194.0" promptText="ID" />
+      <Button fx:id="login" accessibleText="LOGIN" layoutX="79.0" layoutY="243.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #800000;" styleClass="color: white;" text="LOGIN" textFill="WHITE" />
+      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="61.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/usuario.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="61.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/clave.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="109.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/nombre.png" />
+         </image>
+      </ImageView>
+         <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="61.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../img/clave.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="ingresr" accessibleText="ingresar" layoutX="19.0" layoutY="277.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #800000;" styleClass="color: white;" text="Ingresar" textFill="WHITE" />
+         <Button fx:id="editar" accessibleText="editar" layoutX="141.0" layoutY="277.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #800000;" styleClass="color: white;" text="Editar" textFill="WHITE" />
+         <Button fx:id="borrar" accessibleText="borrar" layoutX="19.0" layoutY="312.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #800000;" styleClass="color: white;" text="Borrar" textFill="WHITE" />
+         <Button fx:id="mostar" accessibleText="mostar" layoutX="141.0" layoutY="312.0" mnemonicParsing="false" onAction="#onBtnClick" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #800000;" styleClass="color: white;" text="Mostar" textFill="WHITE" />
+         <ListView fx:id="lista" layoutX="302.0" layoutY="23.0" prefHeight="326.0" prefWidth="274.0" />
+   </children>
+</Pane>
+</VBox>
